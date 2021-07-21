@@ -79,14 +79,28 @@
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+	justify-content: center;
 	border-radius: 50%;
 	width: 700px;
-	height: 100px;
+	min-height: 100px;
 	border: 5px solid rgb(247, 247, 247);
 	background-color: rgb(20, 20, 20);
-	padding: 20px 10px;
+	padding: 10% 10%;
 	margin: 30px 0;
+}
 
+.infotext {
+	text-align: center;
+	word-wrap: break-word;
+	width:100%;
+	font-size: 23px;
+	margin:0;
+}
+
+.infohead {
+	margin-bottom: 10px;
+	font-size:35px; 
+	text-decoration: underline;
 }
 
 #bottombar {
