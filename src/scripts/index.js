@@ -1,11 +1,11 @@
-import './style.css';
-import pizza from './pizza.jpg';
+import '../styles/style.css';
+import pizza from '../assets/pizza.jpg';
 import populateHome from './home.js';
 import populateMenu from './menu.js';
 import populateContact from './contact.js';
 
 const content = document.getElementById("content");
-content.style.backgroundImage = "url(" + pizza + ")";
+content.style.background = "url(" + pizza + ") no-repeat center center fixed";
 const topbar = document.createElement("div");
 topbar.id = "topbar";
 const infodiv = document.createElement("div");
@@ -33,6 +33,8 @@ function dePopulate() {
 		infodiv.removeChild(infodiv.firstChild);
 }
 
-homebtn.addEventListener("click", () => {dePopulate(); populateHome();});
-menubtn.addEventListener("click", () => {dePopulate(); populateMenu();});
-contactbtn.addEventListener("click", () => {dePopulate(); populateContact();});
+homebtn.addEventListener("click", () => {dePopulate(); populateHome(infodiv);});
+menubtn.addEventListener("click", () => {dePopulate(); populateMenu(infodiv);});
+contactbtn.addEventListener("click", () => {dePopulate(); populateContact(infodiv);});
+
+populateHome(infodiv);
