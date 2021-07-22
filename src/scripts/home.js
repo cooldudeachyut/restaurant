@@ -1,4 +1,4 @@
-import chef from '../assets/chef.png';
+import chef_icon from '../assets/chef.png';
 
 export default function populateHome(appendToThisElement) {
 
@@ -9,10 +9,10 @@ export default function populateHome(appendToThisElement) {
 
 		let head = document.createElement("h1");
 		head.classList.add("head");
-		head.innerText = "Mulan's Pizzeria";
+		head.innerText = "Giovanni's Pizzeria";
 
 		const headicon = document.createElement("img");
-		headicon.src = chef;
+		headicon.src = chef_icon;
 		headicon.classList.add("icon");
 
 		headbox.append(headicon);
@@ -27,7 +27,7 @@ export default function populateHome(appendToThisElement) {
 		history.classList.add("infobox");
 
 		let historyInner = document.createElement("p");
-		historyInner.innerText = "Mulan's Pizzeria has been providing the best Italian Napolitan pizzas since 1889 with hand-made dough and freshly picked tomatoes to create a blast of flavour and tone that you will never forget!";
+		historyInner.innerText = "Mulan's Pizzeria has been providing the best Italian Neapolitan pizzas since 1889 with hand-made dough and freshly picked tomatoes to create a blast of flavour and tone that you will never forget!";
 		historyInner.classList.add("infotext");
 		history.append(historyInner);
 
